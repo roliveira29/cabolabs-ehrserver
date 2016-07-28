@@ -224,12 +224,12 @@ grails.plugin.springsecurity.logout.postOnly = false
 // Mail
 grails {
    mail {
-     host = System.getenv('EHRSERVER_EMAIL_HOST')
-     port = System.getenv('EHRSERVER_EMAIL_PORT')
-     username = System.getenv('EHRSERVER_EMAIL_USER')
-     password = System.getenv('EHRSERVER_EMAIL_PASS')
+     host = "smtp.googlemail.com"
+       port =587
+     username = "beta.cides.ehr.server@gmail.com"
+     password = "ehrserver123"
      'default' {
-        from = System.getenv('EHRSERVER_EMAIL_FROM')
+        from = "beta.cides.ehr.server@gmail.com"
      }
      /*
      props = ["mail.smtp.auth":"true",
