@@ -17,7 +17,7 @@ hibernate {
 environments {
     development {
         dataSource {
-           dbCreate = "create-drop" // one of 'create', 'create-drop', 'update', 'validate', ''
+           dbCreate = "update" // one of 'create', 'create-drop', 'update', 'validate', ''
 
 //           logSql = true
            
@@ -31,7 +31,7 @@ environments {
            url = "jdbc:mysql://$host:$port/$dbName" // ?useTimezone=true&serverTimezone=UTC
            
            username = 'root'
-           password = ''
+           password = '123456'
         }
     }
     test {
